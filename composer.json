@@ -1,0 +1,32 @@
+{
+	"autoload": {
+		"psr-4": {
+			"App\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\": "tests/phpunit"
+		}
+	},
+	"require": {
+		"mediawiki/mediawiki-codesniffer": "^36.0",
+		"phpunit/phpunit": "^9.5",
+		"joshtronic/php-loremipsum": "^2.1",
+		"ext-json": "*"
+	},
+	"scripts": {
+		"lint": "phpcs",
+		"phpcbf": "phpcbf",
+		"serve": "php -S localhost:8989",
+		"phpunit": "phpunit tests/phpunit",
+		"test": [
+			"@lint",
+			"@phpunit"
+		],
+		"seed": "php seedContent.php"
+	},
+	"config": {
+		"process-timeout": 0
+	}
+}

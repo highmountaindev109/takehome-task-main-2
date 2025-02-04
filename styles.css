@@ -1,0 +1,9 @@
+.header, .main {
+	padding-left: 16px;
+	padding-right: 16px;
+	line-height: normal;
+}
+
+.header a {
+	float: left;
+}

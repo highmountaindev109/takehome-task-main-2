@@ -1,0 +1,87 @@
+wefewfwUse of 12312313metasyntactic variables in computer programming}}
+{{Distinguish|FUBAR|Foobar2000}}
+{{Redirect|Foo|other uses|Foo (disambiguation)}}
+{{Use dmy dates|date=February 2020|cs1-dates=y}}
+The terms '''foobar''' ({{IPAc-en|ˈ|f|uː|b|ɑr}}), '''foo''', '''bar''', '''baz''', and others are used as [[metasyntactic variable]]s and [[placeholder name]]s in [[computer programming]] or computer-related documentation.<ref name="rfc3092">{{IETF RFC|3092}} - Etymology of "Foo"</ref> They have been used to name entities such as [[Variable (computer science)|variable]]s, [[Function (computer science)|functions]], and [[command (computing)|command]]s whose exact identity is unimportant and serve only to demonstrate a concept.
+
+== History and etymology ==
+[[File:Smokeycover.jpg|thumb|upright|[[Smokey Stover]]<!-- no italics, character’s name --> driving a "foomobile"]]
+The etymology of foobar could be derived from the [[World War II]]-era military slang [[List of military slang terms#FUBAR|FUBAR]], which was [[bowdlerised]] to ''foobar''.<ref name="dictionary">{{Cite web|url=https://www.dictionary.com/e/foo/|title=What does foo mean?|publisher=[[Dictionary.com]]|access-date=2019-08-17}}</ref> The word ''foo'' on its own was used earlier. Between about 1930 and 1952 it appeared in the comic ''[[Smokey Stover]]'' by [[Bill Holman (cartoonist)|Bill Holman]], who stated that he used the word due to having seen it on the bottom of a jade Chinese figurine in [[Chinatown, San Francisco|San Francisco Chinatown]], purportedly signifying "good luck".<ref>{{Cite web|url=https://www.smokey-stover.com/history.html|title=The History of Bill Holman|date=2007-06-13|publisher=[[Smokey Stover]]|access-date=2019-08-17}}</ref> If true, this is related to the Chinese word ''fu'' ("{{lang|zh|福}}", sometimes transliterated ''foo'', as in ''[[Chinese guardian lions|foo dog]]''), which can mean ''happiness'' or ''blessing''.<ref name="dictionary" />
+
+The first known use of the terms in print in a programming context appears in a 1965 edition of MIT's ''[[Tech Engineering News]]''.<ref>{{cite book|url=https://books.google.com/books?id=aOQRAQAAMAAJ&q=foobar|title=Tech Engineering News|volume=47|year=1965|publisher=[[Massachusetts Institute of Technology]]|page=63|quote=Further, it is possible to search for an effective address; e.g., if an instruction such as "add 1 foo" were used, specifying indirect addressing thru location "foo", and location "foo" contained the address of location "foobar", then an effective word search for "foobar" would find location "foo" and the location containing the "add" instruction as well.}}</ref> ''Foobar'' may have come about as a result of the pre-existing "Foo" being conjoined with "bar", an addition borrowed from the military's FUBAR. The use of ''foo'' in a programming context is generally credited to the [[Tech Model Railroad Club]] (TMRC) of [[Massachusetts Institute of Technology|MIT]] from circa 1960.<ref name="rfc3092" /> In the complex model system, there were [[scram]] switches located at numerous places around the room that could be thrown if something undesirable was about to occur, such as a train going full-bore at an obstruction. Another feature of the system was a digital clock on the dispatch board. When someone hit a scram switch, the clock stopped and the display was replaced with the word "FOO"; at TMRC the scram switches are, therefore, called "Foo switches". Because of this, an entry in the 1959 ''Dictionary of the TMRC Language'' went something like this: "FOO: The first syllable of the misquoted sacred chant phrase '[[Om mani padme hum|foo mane padme hum]].' Our first obligation is to keep the foo counters turning."<ref>{{cite web|url=https://www.computer-dictionary-online.org/definitions-f/foo.html|title=Computer Dictionary Online}}, computer-dictionary-online.org</ref> One book{{which|date=November 2010}} describing the MIT train room describes two buttons by the door labeled "foo" and "bar". These were general purpose buttons and were often re-purposed for whatever fun idea the MIT hackers had at the time, hence the adoption of foo and bar as general-purpose variable names. An entry in the ''Abridged Dictionary of the TMRC Language'' states:<ref>{{cite web|url=http://tmrc.mit.edu/dictionary.html#FOO|title=Abridged Dictionary of the TMRC Language|publisher=Tech Model Railroad Club of [[MIT]]|access-date=2013-03-12|archive-url=https://web.archive.org/web/20180102215225/http://tmrc.mit.edu/dictionary.html#FOO|archive-date=2 January 2018|url-status=dead}}</ref>
+
+{{Quote|text = Multiflush: stop-all-trains-button. Next best thing to the red door button. Also called FOO. Displays "FOO" on the clock when used.}}
+
+The shift from the military expression FUBAR to foobar may also have been driven by the latter being a computer science pun.  Since overbars designate repeating decimal numbers, the word foobar also signifies a number in hexadecimal, a base typically used in low-level programming.  That number, 0.{{overline|F00}}, equals the decimal fraction 256/273<ref group=Note name=HexMath01/>.
+The term ''foobar'' was propagated through computer science circles in the 1960s and early 1970s by system manuals from [[Digital Equipment Corporation]].{{citation needed|date=May 2009}} ''Foobar'' was also used as a variable name in the [[Fortran]] code of ''[[Colossal Cave Adventure]]'' (1977 Crowther and Woods version). The variable FOOBAR was used to contain the player's progress in saying the magic phrase "Fee Fie Foe Foo". [[Intel]] also used the term ''foo'' in their programming documentation in 1978.<ref name="Intel_1978_MSC86-OI"/>
+
+==Example use in code==
+In this ''[[Hello, World!]]'' code sample in [[C (programming language)|C]], ''foo'' and ''bar'' are used to illustrate [[string substitution]]:
+
+<syntaxhighlight lang="c">
+#include <stdio.h>
+
+int main() {
+   const char *foo = "Hello";
+   const char *bar = "World!";
+   fprintf(stdout, "%s %s\n", foo, bar);
+
+   return 0;
+}
+
+</syntaxhighlight>In this [[Scheme (programming language)|Scheme]] code sample, ''foobar'' is used to illustrate the name of a function:<syntaxhighlight lang="scheme">
+(define foobar
+   (lambda (x)
+      (display x)))
+(foobar "Hello World!")
+
+</syntaxhighlight>In this ''Hello, World!'' code sample in [[Python (programming language)|Python]], ''foo'' and ''bar'' are used to illustrate the names of the strings printed to [[Standard streams|STDOUT]].<syntaxhighlight lang="python3">
+foo = "Hello"
+bar = "World"
+print(foo, bar)
+</syntaxhighlight>In this ''Hello, World!'' code sample in [[C Sharp (programming language)|C#]], ''foo'' and ''bar'' are used to illustrate the names of the strings.<syntaxhighlight lang="c#">
+string foo = "Hello";
+string bar = "World";
+Console.WriteLine(foo + bar);
+</syntaxhighlight>
+
+==Examples in language==
+* [[Foo Camp]] is an annual [[hacker convention]].
+* [[BarCamp]], an international network of user-generated conferences
+* During the ''[[United States v. Microsoft Corp. (2001)|United States v. Microsoft Corp.]]'' trial, some evidence was presented that Microsoft had tried to use the [[Web Services Interoperability]] organization as a means to stifle competition, including e-mails in which top executives including [[Bill Gates]] referred to the WS-I using the codename "foo".<ref>{{cite web
+| url=https://www.cnet.com/news/microsoft-ploy-to-block-sun-exposed/
+| title=Microsoft ploy to block Sun exposed
+| date=2002-07-04
+| author=Mike Ricciuti
+| publisher=[[CNET]]
+| access-date=2019-08-17}}</ref>
+* [[foobar2000]] is an audio player.
+* Google uses a web tool called "foobar" to recruit new employees.<ref>{{Cite web|url=https://www.ibtimes.co.uk/google-foobar-how-searching-web-earned-software-graduate-job-google-1517284|title=Google Foobar: How searching the web earned a software graduate a job at Google|date=2015-08-27|author=Alistair Charlton|publisher=[[International Business Times]]|access-date=2019-08-17}}</ref>
+
+== See also ==
+{{Portal|Computer programming}}
+* [[Foo fighter]]
+* [[Foo was here]]
+* [[xyzzy (computing)|xyzzy]]
+* [[:Category:Variable (computer science)]]
+{{Clear}}
+
+==Notes==
+{{reflist|group=Note|refs=
+<ref name="HexMath01">[[Repeating_decimal#Notation]]<br>
+0.{{overline|F00}} = 0.F00F00F00... = F00#16/FFF#16 = 15*16*16/(16*16*16-1) = 3840/4095 = 256/273</ref>
+}}
+
+== References ==
+{{Reflist|refs=
+<ref name="Intel_1978_MSC86-OI">{{cite book |title=MCS-86 Assembler Operating Instructions For ISIS-II Users |id=Manual Order No. 9800641A |date=1978 |edition=A32/379/10K/CP |publisher=[[Intel Corporation]] |location=Santa Clara, California, USA |url=https://archive.org/details/bitsavers_intelISISIblerOperatingInstructionsforISISIIUsersM_3593319/ |access-date=2020-02-29}} [https://archive.org/stream/bitsavers_intelISISIblerOperatingInstructionsforISISIIUsersM_3593319/9800641A_MCS-86_Assembler_Operating_Instructions_for_ISIS-II_Users_Mar79_djvu.txt][https://archive.org/download/bitsavers_intelISISIblerOperatingInstructionsforISISIIUsersM_3593319/9800641A_MCS-86_Assembler_Operating_Instructions_for_ISIS-II_Users_Mar79.pdf]</ref>
+
+}}
+
+== External links ==
+{{wiktionary|foobar|foo|bar}}
+* [http://www.catb.org/jargon/html/F/foo.html The Jargon File entry on "foobar"], catb.org
+* {{IETF RFC|1639}} – FTP Operation Over Big Address Records (FOOBAR)
+
+[[Category: Placeholder names]]
+[[Category: Computer programming folklore]]
